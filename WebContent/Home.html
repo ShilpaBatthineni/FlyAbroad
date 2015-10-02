@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+ <script>
+/*   $(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+  $(document).ready(function(){
+	    $("#flip").click(function(){
+	        $("#panel").slideToggle("slow");
+	    });
+	});
+  $(document).ready(function(){
+	    $('.btn').popover({ container: ".parent"}); 
+	}); */
+</script> 
+
+<style>
+.panel {
+    opacity: 0.7;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+} 
+.panel:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px; 
+  /*   background-color: black;   
+    color:white; */
+}
+
+
+.panel > .panel-heading {
+    background-color: LightSeaGreen;
+    color: white;
+
+}
+.panel > .panel-collapse  {
+    background-color: LightSeaGreen;
+    color: white;
+
+}
+.btn-group-vertical {
+	margin-top: 50px;
+
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-12 ">
+ <nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">    
+  
+      <ul class="nav navbar-nav" >       
+        <li class="dropdown"  ><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-align-justify" style="font-size:25px"></span></a>
+          <ul class="dropdown-menu" style="font-size:17px">
+            <li><a href="Home.html">Home</a></li>
+           
+                  <li class="dropdown-submenu" >
+        <a class="test" tabindex="-1" href="#">Courses<div class="pull-right"> <span class="caret"></span></div></a>
+        <ul class="dropdown-menu"style="font-size:17px">
+        <i class="fa fa-university" style="font-size:25px">Find Colleges</i>
+        <li  class="divider"></li>
+          <li class="disabled"><a href="#">Masters</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">MS(Master of Science)<div class="pull-right">  <span class="caret"></span></div></a>
+            <ul class="dropdown-menu" style="font-size:17px">
+       <li class="disabled"><a href="#">BY STREAM</a></li>
+        <li  class="divider"></li>
+           <li><a  href="#">Business</a></li>
+            <li><a  href="#">Engineering</a></li>
+            <li><a  href="#">Science</a></li>
+            <li><a  href="#">Computers</a></li>
+            <li><a  href="#">Medicine</a></li>
+            <li><a  href="#">Humanities</a></li>
+            <li><a  href="#">Law</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">MBA(Master of Business Administration)<span class="caret"></span></a>
+            <ul class="dropdown-menu"style="font-size:17px">
+       <li class="disabled"><a href="#">BY STREAM</a></li>
+        <li  class="divider"></li>
+           <li><a href="#">Business</a></li>
+            <li><a  href="#">Engineering</a></li>
+            <li><a  href="#">Science</a></li>
+            <li><a  href="#">Computers</a></li>
+            <li><a  href="#">Medicine</a></li>
+            <li><a  href="#">Humanities</a></li>
+            <li><a  href="#">Law</a></li>
+            </ul>
+          </li>
+            <li  class="divider"></li>
+          <li class="disabled"><a href="#">Bachelors</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">B.Tech / BE (Bachelor of Engineering)<div class="pull-right"> <span class="caret"></span></div></a>
+            <ul class="dropdown-menu"style="font-size:17px">
+       <li class="disabled"><a href="#">BY STREAM</a></li>
+        <li  class="divider"></li>
+           <li><a  href="#">Business</a></li>
+            <li><a href="#">Engineering</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">Medicine</a></li>
+            <li><a href="#">Humanities</a></li>
+            <li><a href="#">Law</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    
+            <li><a href="#">Popular Universities</a></li>
+            <li><a href="exams.html">Exams</a></li>
+            <li><a href="#">States in USA</a></li>
+              <li  class="divider">
+            <li><a href="#">Types of Funds</a></li>
+            <li><a href="visa.html">Visa Guidance</a></li></li>
+            
+            <li  class="divider"></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul></li>
+
+    <div class="navbar-brand" href="#"style="font-size:25px">FLY ABROAD <span class="glyphicon glyphicon-plane" ></span></div>       
+    </div>
+</nav></div></div><br><br><br><br>
+<center>
+<div class="container">
+
+    <div class="form-group">
+       
+
+  <div class="row">
+    <div class="col-xs-12">
+<div class="btn-group-vertical">
+  
+  
+   <div class="row">
+    <div class="col-xs-12 ">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="http://stanford.edu/about/images/intro_about.jpg" alt="stanford University" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Stanford</h3>
+         <!--  <p>The atmosphere in Chania has a touch of Florence and Venice.</p> -->
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Great_Dome,_Massachusetts_Institute_of_Technology,_Cambridge_MA.jpg" alt="stanford" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Massachusetts</h3>
+    
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/IllinoisQuad.jpg" alt="Illinois" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Illinois</h3>
+         
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://cdn.stateuniversity.com/assets/logos/images/9564/large_Harvard_University_building.jpg" alt="harvard" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Harvard</h3>
+         
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div></div></div>
+</div>
+	<br>	<br>
+		<center><h1>Universities in USA</h1></center>
+ <div class="row">
+    <div class="col-xs-12 ">
+<div class="btn-group-vertical">
+ <div class="panel-group" id="accordion">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse1"><center>Massachusetts Institute of Technology - Cambridge, MA</center></div>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+        <center><div>
+    <a href="Massachusetts.html"><button class="btn btn-default btn-md">View Profile </button></a>
+   <a href="Massachusettsmap.html"> <button class="btn btn-default btn-md">View Location</button></a>
+  </div></center>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse2"><center>Stanford University - Stanford, CA</center></div>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md"">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse3"><center>University of California - Berkeley,CA</center></div>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse4"><center> Georgia Institute of Technology - Atlanta, GA </center></div>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse5"><center> California Institute of Technology - Pasadena, CA </center></div>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse6"><center>University of Illinois, Urbana-Champaign</center></div>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse7"><center>Carnegie Mellon University</center></div>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse8"><center>University of Michigan, Ann Arbor</center></div>
+        </h4>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse9"><center>University of Texas, Austin</center></div>
+        </h4>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse10"><center>Cornell University</center></div>
+        </h4>
+      </div>
+      <div id="collapse10" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse11"><center>Purdue University,West Lafayette</center></div>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse12"><center>University of Southern California</center></div>
+        </h4>
+      </div>
+      <div id="collapse12" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse13"><center>University of California, San Diego</center></div>
+        </h4>
+      </div>
+      <div id="collapse13" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse14"><center>Columbia University</center></div>
+        </h4>
+      </div>
+      <div id="collapse14" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse15"><center>University of California,Los Angeles</center></div>
+        </h4>
+      </div>
+      <div id="collapse15" class="panel-collapse collapse">
+        <div class="panel-body">
+        <center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <div data-toggle="collapse" data-parent="#accordion" href="#collapse16"><center> Harvard University </center></div>
+        </h4>
+      </div>
+      <div id="collapse16" class="panel-collapse collapse">
+        <div class="panel-body"><center><div>
+    <button class="btn btn-default btn-md">View Profile </button>
+    <button class="btn btn-default btn-md">View Location</button>
+  </div></center>
+       </div>
+      </div>
+    </div>
+  </div> 
+</div></div></div></div></div>
+   </div>
+ </center>
+
+		
+ 
+
+   
+    </div></body></html>
